@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "roaddecor:block/painted_asphalt",
+    "particle": "roaddecor:block/painted_asphalt"
+  }
+}

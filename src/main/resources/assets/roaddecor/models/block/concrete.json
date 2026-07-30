@@ -1,0 +1,21 @@
+{
+  "loader": "neoforge:elements",
+  "textures": {
+    "concrete": "roaddecor:block/concrete",
+    "particle": "roaddecor:block/concrete"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": { "uv": [0, 0, 16, 16], "texture": "#concrete" },
+        "south": { "uv": [0, 0, 16, 16], "texture": "#concrete" },
+        "east": { "uv": [0, 0, 16, 16], "texture": "#concrete" },
+        "west": { "uv": [0, 0, 16, 16], "texture": "#concrete" },
+        "up": { "uv": [0, 0, 16, 16], "texture": "#concrete" },
+        "down": { "uv": [0, 0, 16, 16], "texture": "#concrete" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "block.roaddecor.asphalt": "Asphalt",
+  "block.roaddecor.concrete": "Concrete",
+  "block.roaddecor.painted_asphalt": "Painted Asphalt",
+  "block.roaddecor.stop_sign": "Stop Sign",
+  "block.roaddecor.road_barrier": "Road Barrier",
+  "item.roaddecor.paint_roller": "Paint Roller",
+  "itemGroup.roaddecor.road_decor_tab": "Road Decor"
+}

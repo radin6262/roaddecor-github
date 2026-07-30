@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "roaddecor:block/road_barrier" },
+    "facing=east": { "model": "roaddecor:block/road_barrier", "y": 90 },
+    "facing=south": { "model": "roaddecor:block/road_barrier", "y": 180 },
+    "facing=west": { "model": "roaddecor:block/road_barrier", "y": 270 }
+  }
+}

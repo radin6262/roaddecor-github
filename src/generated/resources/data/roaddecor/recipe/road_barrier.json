@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "roaddecor:concrete"
+    }
+  },
+  "pattern": [
+    " C ",
+    "CCC",
+    "CCC"
+  ],
+  "result": {
+    "count": 3,
+    "id": "roaddecor:road_barrier"
+  }
+}
