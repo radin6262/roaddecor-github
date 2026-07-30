@@ -11,18 +11,24 @@ on:
         options:
           - draft
           - publish
+
       version:
         description: 'Version (leave empty to use gradle.properties)'
         required: false
         default: ''
         type: string
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     outputs:
       version: ${{ steps.get_version.outputs.version }}
       jar_name: ${{ steps.get_jar.outputs.jar_name }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -44,13 +50,18 @@ jobs:
 
       - name: Get Version
         id: get_version
+        shell: bash
         run: |
           if [ -n "${{ inputs.version }}" ]; then
             VERSION="${{ inputs.version }}"
           else
             VERSION=$(grep "^mod_version=" gradle.properties | cut -d'=' -f2)
           fi
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+          # Remove a leading "v" if one was provided.
+          VERSION="${VERSION#v}"
+
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
           echo "Found version: $VERSION"
 
       - name: Run Datagen
@@ -61,9 +72,16 @@ jobs:
 
       - name: Find JAR file
         id: get_jar
+        shell: bash
         run: |
-          JAR_FILE=$(ls build/libs/roaddecor-*.jar | head -1)
-          echo "jar_name=$(basename $JAR_FILE)" >> $GITHUB_OUTPUT
+          JAR_FILE=$(find build/libs -maxdepth 1 -type f -name 'roaddecor-*.jar' | head -n 1)
+
+          if [ -z "$JAR_FILE" ]; then
+            echo "No Road Decor JAR found!"
+            exit 1
+          fi
+
+          echo "jar_name=$(basename "$JAR_FILE")" >> "$GITHUB_OUTPUT"
           echo "JAR file: $JAR_FILE"
 
       - name: Upload JAR as Artifact
@@ -75,12 +93,20 @@ jobs:
 
       - name: Create Draft Release
         if: inputs.release_type == 'draft'
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           name: Road Decor v${{ steps.get_version.outputs.version }}
           tag_name: v${{ steps.get_version.outputs.version }}
           body: |
-            Drafted - autobuild
+            ## Road Decor v${{ steps.get_version.outputs.version }}
+
+            Automated draft release.
+
+            ### Requirements
+            - Minecraft 1.21.1
+            - NeoForge 21.1.244+
+
+            This release was automatically built by GitHub Actions.
           draft: true
           prerelease: false
           files: |
@@ -90,12 +116,20 @@ jobs:
 
       - name: Create Published Release
         if: inputs.release_type == 'publish'
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           name: Road Decor v${{ steps.get_version.outputs.version }}
           tag_name: v${{ steps.get_version.outputs.version }}
           body: |
-            Drafted - autobuild
+            ## Road Decor v${{ steps.get_version.outputs.version }}
+
+            Automated release.
+
+            ### Requirements
+            - Minecraft 1.21.1
+            - NeoForge 21.1.244+
+
+            This release was automatically built by GitHub Actions.
           draft: false
           prerelease: false
           files: |
