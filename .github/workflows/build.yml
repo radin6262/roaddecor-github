@@ -123,8 +123,6 @@ jobs:
           body: |
             ## Road Decor v${{ steps.get_version.outputs.version }}
 
-            Automated release.
-
             ### Requirements
             - Minecraft 1.21.1
             - NeoForge 21.1.244+
