@@ -4,7 +4,7 @@ Road Decor is a Minecraft mod that adds decorative road elements to enhance your
 
 ![NeoForge](https://img.shields.io/badge/NeoForge-1.21.1-blue.svg)
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg)
-![License](https://img.shields.io/badge/License-All%2520Rights%2520Reserved-red.svg)
+![License](https://img.shields.io/badge/License-AllRightsReserved-red.svg)
 
 ## Features
 
