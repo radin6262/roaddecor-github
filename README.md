@@ -167,6 +167,7 @@ The following features are planned for future versions:
     * [ ] Directional arrows
     * [ ] Crosswalks
     * [x] Yellow Lines
+* [ ] Traffic Cones(next up)
 * [ ] Street lamps (Planned)
 
 The roadmap is subject to change as development continues.
