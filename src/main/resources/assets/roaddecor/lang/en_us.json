@@ -4,6 +4,7 @@
   "block.roaddecor.painted_asphalt": "Painted Asphalt",
   "block.roaddecor.stop_sign": "Stop Sign",
   "block.roaddecor.road_barrier": "Road Barrier",
+  "block.roaddecor.one_way_sign": "One Way Sign",
   "item.roaddecor.paint_roller": "Paint Roller",
   "itemGroup.roaddecor.road_decor_tab": "Road Decor"
 }
