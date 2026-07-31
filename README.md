@@ -56,7 +56,7 @@ Screenshots coming soon.
 ### Requirements
 
 * Minecraft **1.21.1**
-* NeoForge **21.1.244 or newer**
+* NeoForge **21.1.244**
 
 ### Steps
 
@@ -123,12 +123,12 @@ src/main/java/radin6262/road/decor/
     ├── ModRecipeProvider.java
     └── ...
 ```
-* you get it ye? *
+_you get it ye?_
 ## Contributing
 
 Contributions are welcome.
 
-** Hey we're still working on this section **
+**Hey we're still working on this section**
 ## License
 
 **All Rights Reserved**
