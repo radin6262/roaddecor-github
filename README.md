@@ -157,17 +157,17 @@ For bug reports and feature requests, use the repository's **GitHub Issues** sec
 
 The following features are planned for future versions:
 
-* [-] More traffic signs
+* [] More traffic signs (work in progress)
 
     * [ ] Yield Sign
     * [ ] Speed Limit Signs
-    * [✔] One Way Sign
+    * [x] One Way Sign
 * [ ] Traffic lights with redstone integration
-* [-] Road markings
+* [] Road markings (work in progress)
     * [ ] Directional arrows
     * [ ] Crosswalks
-    * [✔] Yellow Lines
-* [ ] Street lamps
+    * [x] Yellow Lines
+* [ ] Street lamps (Planned)
 
 The roadmap is subject to change as development continues.
 
