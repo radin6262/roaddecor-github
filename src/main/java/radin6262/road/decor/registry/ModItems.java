@@ -33,6 +33,9 @@ public class ModItems {
                     .durability(64) // Can be used 64 times
                     .stacksTo(1)));
 
+    public static final DeferredItem<OneWaySignItem> ONE_WAY_SIGN =
+            ITEMS.register("one_way_sign", () -> new OneWaySignItem(ModBlocks.ONE_WAY_SIGN.get()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

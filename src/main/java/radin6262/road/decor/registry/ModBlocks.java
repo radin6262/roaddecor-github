@@ -6,11 +6,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import radin6262.road.decor.RoadDecor;
-import radin6262.road.decor.blocks.AsphaltBlock;
-import radin6262.road.decor.blocks.ConcreteBlock;
-import radin6262.road.decor.blocks.PaintedAsphaltBlock;
-import radin6262.road.decor.blocks.StopSignBlock;
-import radin6262.road.decor.blocks.RoadBarrierBlock;
+import radin6262.road.decor.blocks.*;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
@@ -40,6 +36,9 @@ public class ModBlocks {
                             .strength(3.0f)
                             .noOcclusion()
                             .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<OneWaySignBlock> ONE_WAY_SIGN =
+            BLOCKS.register("one_way_sign", () -> new OneWaySignBlock(OneWaySignBlock.createProperties()));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

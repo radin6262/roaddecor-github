@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "roaddecor:block/one_way_sign", "y": 180 },
+    "facing=east": { "model": "roaddecor:block/one_way_sign", "y": 270 },
+    "facing=south": { "model": "roaddecor:block/one_way_sign" },
+    "facing=west": { "model": "roaddecor:block/one_way_sign", "y": 90 }
+  }
+}

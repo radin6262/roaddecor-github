@@ -22,7 +22,8 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
                 ModBlocks.CONCRETE.get(),
                 ModBlocks.PAINTED_ASPHALT.get(),
                 ModBlocks.STOP_SIGN.get(),
-                ModBlocks.ROAD_BARRIER.get()
+                ModBlocks.ROAD_BARRIER.get(),
+                ModBlocks.ONE_WAY_SIGN.get()
         );
     }
 
@@ -34,5 +35,6 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.PAINTED_ASPHALT.get());
         dropSelf(ModBlocks.STOP_SIGN.get());
         dropSelf(ModBlocks.ROAD_BARRIER.get());
+        dropSelf(ModBlocks.ONE_WAY_SIGN.get());
     }
 }

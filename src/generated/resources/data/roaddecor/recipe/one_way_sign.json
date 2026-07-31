@@ -2,23 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "I": {
-      "item": "minecraft:iron_ingot"
-    },
-    "R": {
-      "item": "minecraft:red_concrete"
+    "B": {
+      "item": "minecraft:blue_concrete"
     },
     "W": {
       "item": "roaddecor:concrete"
     }
   },
   "pattern": [
-    " W ",
-    "WRW",
-    " I "
+    " B ",
+    "BWB",
+    " W "
   ],
   "result": {
     "count": 1,
-    "id": "roaddecor:stop_sign"
+    "id": "roaddecor:one_way_sign"
   }
 }

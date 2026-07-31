@@ -41,6 +41,7 @@ public class RoadDecor {
                         output.accept(ModItems.PAINTED_ASPHALT.get());
                         output.accept(ModItems.STOP_SIGN.get());
                         output.accept(ModItems.ROAD_BARRIER.get());
+                        output.accept(ModItems.ONE_WAY_SIGN.get());
                         output.accept(ModItems.PAINT_ROLLER.get());
                     })
                     .build());

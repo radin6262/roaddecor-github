@@ -48,7 +48,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("WRW")
                 .pattern(" I ")
                 .define('R', Blocks.RED_CONCRETE)
-                .define('W', Blocks.WHITE_CONCRETE)
+                .define('W', ModBlocks.CONCRETE.get())
                 .define('I', Items.IRON_INGOT)
                 .unlockedBy("has_red_concrete", has(Blocks.RED_CONCRETE))
                 .save(output);
@@ -75,6 +75,16 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('I', Items.IRON_INGOT)
                 .define('S', Items.STICK)
                 .unlockedBy("has_wool", has(Blocks.YELLOW_WOOL))
+                .save(output);
+
+        // One Way Sign: 4 white concrete + 1 blue concrete (arrow shape)
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.ONE_WAY_SIGN.get(), 1)
+                .pattern(" B ")
+                .pattern("BWB")
+                .pattern(" W ")
+                .define('W', ModBlocks.CONCRETE.get())
+                .define('B', Blocks.BLUE_CONCRETE)
+                .unlockedBy("has_white_concrete", has(Blocks.WHITE_CONCRETE))
                 .save(output);
     }
 }
