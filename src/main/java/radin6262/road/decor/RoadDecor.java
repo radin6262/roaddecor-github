@@ -45,6 +45,8 @@ public class RoadDecor {
                         output.accept(ModItems.ONE_WAY_SIGN.get());
                         output.accept(ModItems.TRAFFIC_CONE.get());
                         output.accept(ModItems.PAINT_ROLLER.get());
+                        output.accept(ModItems.LOWER_SPLIT_ASPHALT_SLOPE.get());
+                        output.accept(ModItems.HIGHER_SPLIT_ASPHALT_SLOPE.get());
                     })
                     .build());
 

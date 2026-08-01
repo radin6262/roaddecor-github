@@ -2,6 +2,8 @@
   "values": [
     "roaddecor:asphalt",
     "roaddecor:painted_asphalt",
-    "roaddecor:asphalt_slope"
+    "roaddecor:asphalt_slope",
+    "roaddecor:lower_split_asphalt_slope",
+    "roaddecor:higher_split_asphalt_slope"
   ]
 }

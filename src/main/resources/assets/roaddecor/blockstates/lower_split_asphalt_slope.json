@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "roaddecor:block/lower_split_asphalt_slope" },
+    "facing=east": { "model": "roaddecor:block/lower_split_asphalt_slope", "y": 90 },
+    "facing=south": { "model": "roaddecor:block/lower_split_asphalt_slope", "y": 180 },
+    "facing=west": { "model": "roaddecor:block/lower_split_asphalt_slope", "y": 270 }
+  }
+}

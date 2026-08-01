@@ -7,6 +7,8 @@
     "roaddecor:road_barrier",
     "roaddecor:one_way_sign",
     "roaddecor:asphalt_slope",
-    "roaddecor:traffic_cone"
+    "roaddecor:traffic_cone",
+    "roaddecor:lower_split_asphalt_slope",
+    "roaddecor:higher_split_asphalt_slope"
   ]
 }

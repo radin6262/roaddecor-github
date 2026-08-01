@@ -42,6 +42,12 @@ public class ModItems {
     public static final DeferredItem<TrafficConeItem> TRAFFIC_CONE =
             ITEMS.register("traffic_cone", () -> new TrafficConeItem(ModBlocks.TRAFFIC_CONE.get()));
 
+    public static final DeferredItem<BlockItem> LOWER_SPLIT_ASPHALT_SLOPE =
+            ITEMS.register("lower_split_asphalt_slope", () -> new BlockItem(ModBlocks.LOWER_SPLIT_ASPHALT_SLOPE.get(), new Item.Properties()));
+
+    public static final DeferredItem<BlockItem> HIGHER_SPLIT_ASPHALT_SLOPE =
+            ITEMS.register("higher_split_asphalt_slope", () -> new BlockItem(ModBlocks.HIGHER_SPLIT_ASPHALT_SLOPE.get(), new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

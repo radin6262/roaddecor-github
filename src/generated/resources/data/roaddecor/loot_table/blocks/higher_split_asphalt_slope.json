@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "roaddecor:higher_split_asphalt_slope"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "roaddecor:blocks/higher_split_asphalt_slope"
+}

@@ -105,5 +105,23 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('W', Blocks.WHITE_CONCRETE)
                 .unlockedBy("has_orange_concrete", has(Blocks.ORANGE_CONCRETE))
                 .save(output);
+
+        // Lower Split Asphalt Slope
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LOWER_SPLIT_ASPHALT_SLOPE.get(), 4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.ASPHALT.get())
+                .unlockedBy("has_asphalt", has(ModBlocks.ASPHALT.get()))
+                .save(output);
+
+        // Higher Split Asphalt Slope
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HIGHER_SPLIT_ASPHALT_SLOPE.get(), 4)
+                .pattern("AAA")
+                .pattern(" AA")
+                .pattern("  A")
+                .define('A', ModBlocks.ASPHALT.get())
+                .unlockedBy("has_asphalt", has(ModBlocks.ASPHALT.get()))
+                .save(output);
     }
 }

@@ -46,6 +46,12 @@ public class ModBlocks {
     public static final DeferredBlock<TrafficConeBlock> TRAFFIC_CONE =
             BLOCKS.register("traffic_cone", () -> new TrafficConeBlock(TrafficConeBlock.createProperties()));
 
+    public static final DeferredBlock<LowerSplitAsphaltSlopeBlock> LOWER_SPLIT_ASPHALT_SLOPE =
+            BLOCKS.register("lower_split_asphalt_slope", () -> new LowerSplitAsphaltSlopeBlock(LowerSplitAsphaltSlopeBlock.createProperties()));
+
+    public static final DeferredBlock<HigherSplitAsphaltSlopeBlock> HIGHER_SPLIT_ASPHALT_SLOPE =
+            BLOCKS.register("higher_split_asphalt_slope", () -> new HigherSplitAsphaltSlopeBlock(HigherSplitAsphaltSlopeBlock.createProperties()));
+
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }

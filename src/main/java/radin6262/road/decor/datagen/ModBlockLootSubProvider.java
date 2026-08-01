@@ -26,7 +26,9 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
                 ModBlocks.ONE_WAY_SIGN.get(),
                 ModBlocks.ASPHALT_SLOPE.get(),
                 ModBlocks.TRAFFIC_CONE.get(),
-                ModBlocks.TRAFFIC_CONE.get()
+                ModBlocks.TRAFFIC_CONE.get(),
+                ModBlocks.LOWER_SPLIT_ASPHALT_SLOPE.get(),
+                ModBlocks.HIGHER_SPLIT_ASPHALT_SLOPE.get()
         );
     }
 
@@ -42,6 +44,8 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.ASPHALT_SLOPE.get());
         dropSelf(ModBlocks.TRAFFIC_CONE.get());
         dropSelf(ModBlocks.TRAFFIC_CONE.get());
+        dropSelf(ModBlocks.LOWER_SPLIT_ASPHALT_SLOPE.get());
+        dropSelf(ModBlocks.HIGHER_SPLIT_ASPHALT_SLOPE.get());
 
     }
 }

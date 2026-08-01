@@ -8,5 +8,7 @@
   "item.roaddecor.paint_roller": "Paint Roller",
   "block.roaddecor.asphalt_slope": "Asphalt Slope",
   "block.roaddecor.traffic_cone": "Traffic Cone",
+  "block.roaddecor.lower_split_asphalt_slope": "Lower Split Asphalt Slope",
+  "block.roaddecor.higher_split_asphalt_slope": "Higher Split Asphalt Slope",
   "itemGroup.roaddecor.road_decor_tab": "Road Decor"
 }
