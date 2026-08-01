@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:orange_concrete"
+    },
+    "W": {
+      "item": "minecraft:white_concrete"
+    }
+  },
+  "pattern": [
+    "O",
+    "W",
+    "O"
+  ],
+  "result": {
+    "count": 4,
+    "id": "roaddecor:traffic_cone"
+  }
+}

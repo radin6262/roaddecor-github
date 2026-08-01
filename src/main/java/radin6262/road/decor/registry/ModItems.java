@@ -7,7 +7,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import radin6262.road.decor.RoadDecor;
 import radin6262.road.decor.items.*;
-
+import radin6262.road.decor.registry.ModBlocks;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(RoadDecor.MODID);
@@ -35,6 +35,12 @@ public class ModItems {
 
     public static final DeferredItem<OneWaySignItem> ONE_WAY_SIGN =
             ITEMS.register("one_way_sign", () -> new OneWaySignItem(ModBlocks.ONE_WAY_SIGN.get()));
+
+    public static final DeferredItem<BlockItem> ASPHALT_SLOPE =
+            ITEMS.register("asphalt_slope", () -> new BlockItem(ModBlocks.ASPHALT_SLOPE.get(), new Item.Properties()));
+
+    public static final DeferredItem<TrafficConeItem> TRAFFIC_CONE =
+            ITEMS.register("traffic_cone", () -> new TrafficConeItem(ModBlocks.TRAFFIC_CONE.get()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

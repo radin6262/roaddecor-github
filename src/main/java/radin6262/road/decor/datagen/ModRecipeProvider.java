@@ -86,5 +86,24 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('B', Blocks.BLUE_CONCRETE)
                 .unlockedBy("has_white_concrete", has(Blocks.WHITE_CONCRETE))
                 .save(output);
+
+        // Asphalt Slope: 3 asphalt in a stair pattern
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASPHALT_SLOPE.get(), 4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.ASPHALT.get())
+                .unlockedBy("has_asphalt", has(ModBlocks.ASPHALT.get()))
+                .save(output);
+
+        // Traffic Cone: 1 orange concrete + 1 white concrete = 4 cones
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.TRAFFIC_CONE.get(), 4)
+                .pattern("O")
+                .pattern("W")
+                .pattern("O")
+                .define('O', Blocks.ORANGE_CONCRETE)
+                .define('W', Blocks.WHITE_CONCRETE)
+                .unlockedBy("has_orange_concrete", has(Blocks.ORANGE_CONCRETE))
+                .save(output);
     }
 }

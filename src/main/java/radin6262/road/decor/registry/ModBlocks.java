@@ -15,6 +15,9 @@ public class ModBlocks {
     public static final DeferredBlock<AsphaltBlock> ASPHALT =
             BLOCKS.register("asphalt", () -> new AsphaltBlock(AsphaltBlock.createProperties()));
 
+    public static final DeferredBlock<AsphaltSlopeBlock> ASPHALT_SLOPE =
+            BLOCKS.register("asphalt_slope", () -> new AsphaltSlopeBlock(AsphaltSlopeBlock.createProperties()));
+
     public static final DeferredBlock<ConcreteBlock> CONCRETE =
             BLOCKS.register("concrete", ConcreteBlock::new);
 
@@ -39,6 +42,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<OneWaySignBlock> ONE_WAY_SIGN =
             BLOCKS.register("one_way_sign", () -> new OneWaySignBlock(OneWaySignBlock.createProperties()));
+
+    public static final DeferredBlock<TrafficConeBlock> TRAFFIC_CONE =
+            BLOCKS.register("traffic_cone", () -> new TrafficConeBlock(TrafficConeBlock.createProperties()));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

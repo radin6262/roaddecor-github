@@ -27,7 +27,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                         ModBlocks.PAINTED_ASPHALT.get(),
                         ModBlocks.STOP_SIGN.get(),
                         ModBlocks.ROAD_BARRIER.get(),
-                        ModBlocks.ONE_WAY_SIGN.get()
+                        ModBlocks.ONE_WAY_SIGN.get(),
+                        ModBlocks.ASPHALT_SLOPE.get(),
+                        ModBlocks.TRAFFIC_CONE.get()
                 );
 
         tag(BlockTags.NEEDS_STONE_TOOL)
@@ -37,7 +39,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                         ModBlocks.PAINTED_ASPHALT.get(),
                         ModBlocks.STOP_SIGN.get(),
                         ModBlocks.ROAD_BARRIER.get(),
-                        ModBlocks.ONE_WAY_SIGN.get()
+                        ModBlocks.ONE_WAY_SIGN.get(),
+                        ModBlocks.ASPHALT_SLOPE.get(),
+                        ModBlocks.TRAFFIC_CONE.get()
                 );
 
         // Custom tags for your mod only - in your mod's namespace
@@ -48,13 +52,16 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                         ModBlocks.PAINTED_ASPHALT.get(),
                         ModBlocks.STOP_SIGN.get(),
                         ModBlocks.ROAD_BARRIER.get(),
-                        ModBlocks.ONE_WAY_SIGN.get()
+                        ModBlocks.ONE_WAY_SIGN.get(),
+                        ModBlocks.ASPHALT_SLOPE.get(),
+                        ModBlocks.TRAFFIC_CONE.get()
                 );
 
         tag(ModTags.Blocks.ASPHALT_BLOCKS)
                 .add(
                         ModBlocks.ASPHALT.get(),
-                        ModBlocks.PAINTED_ASPHALT.get()
+                        ModBlocks.PAINTED_ASPHALT.get(),
+                        ModBlocks.ASPHALT_SLOPE.get()
                 );
     }
 }

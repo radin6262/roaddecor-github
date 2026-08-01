@@ -5,6 +5,8 @@
     "roaddecor:painted_asphalt",
     "roaddecor:stop_sign",
     "roaddecor:road_barrier",
-    "roaddecor:one_way_sign"
+    "roaddecor:one_way_sign",
+    "roaddecor:asphalt_slope",
+    "roaddecor:traffic_cone"
   ]
 }

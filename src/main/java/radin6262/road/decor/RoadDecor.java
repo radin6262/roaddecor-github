@@ -37,11 +37,13 @@ public class RoadDecor {
                     .icon(() -> new ItemStack(ModItems.ASPHALT.get()))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.ASPHALT.get());
+                        output.accept(ModItems.ASPHALT_SLOPE.get());
                         output.accept(ModItems.CONCRETE.get());
                         output.accept(ModItems.PAINTED_ASPHALT.get());
                         output.accept(ModItems.STOP_SIGN.get());
                         output.accept(ModItems.ROAD_BARRIER.get());
                         output.accept(ModItems.ONE_WAY_SIGN.get());
+                        output.accept(ModItems.TRAFFIC_CONE.get());
                         output.accept(ModItems.PAINT_ROLLER.get());
                     })
                     .build());
